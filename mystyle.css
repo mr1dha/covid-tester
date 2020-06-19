@@ -1,0 +1,120 @@
+/*====================== STYLE UNTUK BERANDA ======================*/
+.jumbotron{
+	background-image: url(img/bg.jpg);
+	background-size: cover;
+	background-position: 0 10px;
+	text-align: center;
+	margin-top: 20px;
+	border-bottom: 5px solid #17a2b8;
+}
+.jumbotron .btn{
+	/*height: 45px;*/
+	width: 165px;
+	font-size: 20px;
+	border-width: 2px;
+	font-weight: 600;
+}
+
+#card-info{
+	border-width: 2px;
+	border-bottom-style: solid;
+	border-color: #17a2b8;
+}
+
+p.ch{
+	color: #17a2b8;
+	position: absolute;
+	left: 45px;
+	top: 10px;
+}
+
+.jumbotron p{
+	font-size: 20px;
+}
+
+.jumbotron span{
+	font-size: 70px;
+	color: black;
+}
+
+.jumbotron hr{
+	border-color: #17a2b8;
+	width: 70px;
+	border-width:3px;
+}
+
+.card-img-top{
+	height: 200px;
+	object-fit: cover;
+	object-position: center;
+}
+
+/*.card .btn{
+	width: 80px;
+	margin-left: 65%;
+	margin-bottom: -10px;
+}*/
+
+.price{
+	font-size: 18px;
+	color: #4bb543;
+	margin-bottom: 0px;	
+}
+.place{
+	color: grey;
+}
+
+.fresh-tag{
+	/*position: absolute;*/
+	top: 30px;
+	left: 30px;
+}
+
+.btn-next{
+	margin-top: 20px;
+}
+
+
+/*====================== STYLE UNTUK FORM PERTANYAAN ======================*/
+#login-form{
+	margin-top: 8rem;
+	border-color: #black;
+	width: 100%;
+	box-shadow: 10px 10px 5px grey;
+}
+#login-form button{
+	width: 100%;
+	border-radius: 0px;
+}
+
+@media(max-width: 720px){
+	body.login{
+		background-repeat: no-repeat;
+		height: 100vh;
+	}
+}
+
+.login{
+	background-image: url(img/bg.jpg);
+	background-size: cover;
+	background-position: 0 40px;
+}
+
+/*============================ STYLE FOR FOOTER ======================*/
+.footer-beranda{
+	text-align: center;
+	background-color: #17a2b8;
+	color: white;
+	padding: 15px;
+}
+
+.footer-check{
+	position: absolute;
+	width: 100%;
+	bottom: 0%;
+	text-align: center;
+	background-color: #17a2b8;
+	color: white;
+	/*font-weight: bold;*/
+	padding: 15px;
+}

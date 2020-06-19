@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script src="https://kit.fontawesome.com/d6f8f7df08.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title>COVID-TESTER | Check</title>
+</head>
+<body class="login">
+
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<i class="fa-1x fas fa-stethoscope"></i>
+				<span class="font-weight-bold">COVID-TESTER</span>
+			</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto" >
+
+					<li class="nav-item">
+						<a class="nav-link active" href="disclaimer.html">DISCLAIMER</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="about.html">ABOUT</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6"></div>
+			<div class="col-md-6">
+				<div class="card border-1 text-center" id="login-form">
+					<div class="card-header">
+						<h3 class="font-weight-bold" id="question-count">PERTANYAAN 1</h3>
+					</div>
+
+					<div class="card-body">
+						<div id="result" style="display: none">
+							<div class="alert" role="alert" id="alert">
+								<h5>Besar Resiko Kamu Terinfeksi Covid-19 adalah :</h5>
+								<h1 style="font-size: 70px" id="percent"> 45%</h1>
+								<h5>Kami Merekomendasikan Untuk:</h5>
+								<span id="recommendation">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quasi accusamus facere natus ut totam nobis nesciunt eum tempore numquam perspiciatis omnis, deleniti possimus sunt atque rem, consequuntur ex. Animi.
+								</span>
+							</div>
+							<div class="row m-0">
+								<div class="col-6 text-center p-0" id="btn-result" >
+									<a class="btn btn-danger" href="index.html" style="width: 100%; border-radius: 0px;">Home</a>
+								</div>
+								<div class="col-6 text-center p-0">
+									<a class="btn btn-info" href="./check.html" style="width: 100%; border-radius: 0px;">Check Again</a>
+								</div>
+							</div>
+						</div>
+						<h5 class="card-title" id="questionBox">Question here!</h5>
+					</div>
+					<div class="row m-0">
+						<div class="col-6 text-center p-0">
+							<button class="btn btn-danger" id="op1" onclick="checkAnswer(this)">Option 1</button>
+						</div>
+						<div class="col-6 text-center p-0">
+							<button class="btn btn-info" id="op2" onclick="checkAnswer(this)">Option 2</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-check mt-3">
+		<p class="mb-0">Made with <span style="color: red">&#9829 </span>by: Muhammad Ridha | KKN Tematik 643</p>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>
